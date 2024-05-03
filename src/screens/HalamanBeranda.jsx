@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View} from "react-native";
 import React from "react";
 
-const About = () => {
+const HalamanBeranda = () => {
     return (
         <View>
-            <Text>About</Text>
+            <Text>Beranda</Text>
         </View>
     );
 };
 
-export default About;
+export default HalamanBeranda;
 
 const style = StyleSheet.create({});

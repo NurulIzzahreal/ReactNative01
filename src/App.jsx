@@ -1,26 +1,17 @@
-import React from "react";
-import {NavigationContainer} from "@react-navigation/native";
-import {createNativeStackNavigator} from "@react-navigation/native-stack";
-import Home from "./screens/Home";
-import About from "./screens/About";
-import Contact from "./screens/Contact";
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+import { NavigationContainer } from '@react-navigation/native';
+import Router from './router';
 
-const Stack = createNativeStackNavigator();
 
 const App = () => {
-    return (
-        <NavigationContainer>
-            <Stack.Navigator initialRouteName="Kontak">
-                <Stack.Screen
-                  name="Home"
-                  component={Home}
-                  options={{headerShown: false}}
-                />
-                <Stack.Screen name="About" component={About} />
-                <Stack.Screen name="Kontak" component={Contact} />
-            </Stack.Navigator>
-        </NavigationContainer>
-    );
-};
+  return (
+    <NavigationContainer>
+      <Router />
+    </NavigationContainer>
+  )
+}
 
-export default App;
+export default App
+
+const styles = StyleSheet.create({})

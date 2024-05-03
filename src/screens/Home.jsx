@@ -1,18 +1,18 @@
 import { StyleSheet, Text, TouchableOpacity, View} from "react-native";
 import React from "react";
-import Tombol from "../components/Tombol";
+import Button from "../components/Button";
 
 const Home = ({navigation}) => {
     return (
         <View>
             <Text>Home</Text>
             <TouchableOpacity
-              onPress={() => navigation.navigate('About')}
+              onPress={() => navigation.navigate('HalamanBeranda')}
               style={StyleSheet.btn}>
-              <Text>Ke About</Text>
+              <Text>Ke Beranda</Text>
             </TouchableOpacity>
-            <Tombol onPress={() => navigation.navigate('About')} />
-            <Tombol onPress={() => navigation.navigate('Kontak')} />
+            <Tombol onPress={() => navigation.navigate('HalamanBeranda')} />
+            <Tombol onPress={() => navigation.navigate('HalamanProfil')} />
         </View>
     );
 };
