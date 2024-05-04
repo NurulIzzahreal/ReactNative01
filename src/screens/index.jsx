@@ -1,6 +1,6 @@
-import Home from './Home'
-import Order from './Order'
-import Account from './Account'
+import Beranda from './Beranda'
+import Pesanan from './Pesanan'
+import Akun from './Akun'
 import Splash from './Splash'
 
-export { Splash, Account, Order, Home }
+export { Splash, Akun, Pesanan, Beranda }

@@ -2,17 +2,18 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Home, Splash, Account, Order } from '../screens';
+import { Beranda, Splash, Akun, Pesanan } from '../screens';
+import { BottomNavigasi } from '../components';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
 const MainApp = () => {
   return (
-    <Tab.Navigator>
-      <Tab.Screen name="Home" component={Home} />
-      <Tab.Screen name="Order" component={Order} />
-      <Tab.Screen name="Account" component={Account} />
+    <Tab.Navigator tabBar={props => <BottomNavigasi {...props} />}>
+      <Tab.Screen name="Beranda" component={Beranda} />
+      <Tab.Screen name="Pesanan" component={Pesanan} />
+      <Tab.Screen name="Akun" component={Akun} />
     </Tab.Navigator>
 
   )
