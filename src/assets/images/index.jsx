@@ -1,4 +1,4 @@
 import Logo from './Logo.png'
-import Splash from './Splash.jpg'
+import SplashB from './SplashB.jpg'
 
-export { Logo, Splash }
+export { Logo, SplashB }
